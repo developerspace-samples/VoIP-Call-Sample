@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:animateLayoutChanges="true"
+    tools:context=".SplashActivity">
+    <com.cometchat.pro.uikit.ui_components.shared.cometchatAvatar.CometChatAvatar
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+    <TextView
+        android:gravity="center"
+        android:fontFamily="monospace"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:text="VoIP Calling"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/phoneNumberEdt"
+            android:padding="16dp"
+            android:inputType="phone"
+            android:hint="Enter your Phone Number"
+            android:background="@drawable/search_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.google.android.gms.common.SignInButton
+            android:layout_margin="16dp"
+            android:layout_below="@+id/phoneNumberEdt"
+            android:id="@+id/signInBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

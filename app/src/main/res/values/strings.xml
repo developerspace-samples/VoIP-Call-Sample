@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">VoIP Calling</string>
+    <string name="title_activity_main_screen">MainActivity</string>
+    <string name="title_logs">Logs</string>
+    <string name="title_users">Users</string>
+</resources>

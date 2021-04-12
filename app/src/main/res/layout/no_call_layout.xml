@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:id="@+id/no_call_layout"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/no_call"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+    <TextView
+        android:fontFamily="monospace"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:text="No Call Logs Available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

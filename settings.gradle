@@ -1,0 +1,2 @@
+include ':app',':uikit'
+rootProject.name = "VoIP Calling"
